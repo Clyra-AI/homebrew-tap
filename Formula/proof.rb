@@ -11,7 +11,7 @@ class Proof < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Clyra-AI/proof/releases/download/v0.4.6/proof_0.4.6_darwin_amd64.tar.gz"
-      sha256 "293b80689064ed683bffeb97d06592088ec056db2f69468a78f60657c2c84d35"
+      sha256 "143fe2d0ad1e38c70001259ace1b1b8dad0f4371d2c302dca42c1d4ffd2ad8bc"
 
       def install
         bin.install "proof"
@@ -19,7 +19,7 @@ class Proof < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Clyra-AI/proof/releases/download/v0.4.6/proof_0.4.6_darwin_arm64.tar.gz"
-      sha256 "6658b0910c48287379caa32467c77af909f399135e34108457b5f865e5e84408"
+      sha256 "c44f219dcd3df7049e02b69a62f2f1f30d249fce35e8a0ca9674a1d34fcbe82b"
 
       def install
         bin.install "proof"
@@ -30,14 +30,14 @@ class Proof < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Clyra-AI/proof/releases/download/v0.4.6/proof_0.4.6_linux_amd64.tar.gz"
-      sha256 "a40bf5568c05cc30a4c85c877e4dd150bdba99d97cc4c4ffc177b0ead7831c35"
+      sha256 "5d279000072eb1c2e4df52c662a983ef26039bdc6d1eda0ea22af93bb7633ead"
       def install
         bin.install "proof"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Clyra-AI/proof/releases/download/v0.4.6/proof_0.4.6_linux_arm64.tar.gz"
-      sha256 "746f5272e4227389fbb426a9c822241a524dc2ac3594bcc3159bc83663b701a3"
+      sha256 "16e6015be75f92010d1a43dc139c9a3946475bdf893f837e610bac693c022eb6"
       def install
         bin.install "proof"
       end
