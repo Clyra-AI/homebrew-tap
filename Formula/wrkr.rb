@@ -5,21 +5,21 @@
 class Wrkr < Formula
   desc "Deterministic AI tooling discovery, risk scoring, and proof artifacts"
   homepage "https://github.com/Clyra-AI/wrkr"
-  version "1.0.8"
+  version "1.0.9"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Clyra-AI/wrkr/releases/download/v1.0.8/wrkr_1.0.8_darwin_amd64.tar.gz"
-      sha256 "b11fbe888e7e4f2c91044ed7d2f62a757b2862f54d6bb7e817e2a30a43a37f37"
+      url "https://github.com/Clyra-AI/wrkr/releases/download/v1.0.9/wrkr_1.0.9_darwin_amd64.tar.gz"
+      sha256 "857fbb545bccafb5bd965e34d8f1c94821d0e5c1c4b70d879d3435706ec68ec3"
 
       def install
         bin.install "wrkr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Clyra-AI/wrkr/releases/download/v1.0.8/wrkr_1.0.8_darwin_arm64.tar.gz"
-      sha256 "b36db3be6c8c199a07da098ba7fd33942f9da9f797c00bd90ee239ecc84f4e1a"
+      url "https://github.com/Clyra-AI/wrkr/releases/download/v1.0.9/wrkr_1.0.9_darwin_arm64.tar.gz"
+      sha256 "27ef29acf5f3dba3f539f7dba8bb5a06622d74cfa7fbedd944a11cb99ad9695f"
 
       def install
         bin.install "wrkr"
@@ -29,15 +29,15 @@ class Wrkr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Clyra-AI/wrkr/releases/download/v1.0.8/wrkr_1.0.8_linux_amd64.tar.gz"
-      sha256 "6d2fafb8e597a294f450cacaeabfa4e2f22052ff20875715176d135fe195588e"
+      url "https://github.com/Clyra-AI/wrkr/releases/download/v1.0.9/wrkr_1.0.9_linux_amd64.tar.gz"
+      sha256 "6b59584647c27a56086c0d34ac2a3436ace95c741c22ddec4594f34aaa996521"
       def install
         bin.install "wrkr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Clyra-AI/wrkr/releases/download/v1.0.8/wrkr_1.0.8_linux_arm64.tar.gz"
-      sha256 "834144c7e211fbf2ff249001b248bb7cfa760730069c68d90d943bc9207746c9"
+      url "https://github.com/Clyra-AI/wrkr/releases/download/v1.0.9/wrkr_1.0.9_linux_arm64.tar.gz"
+      sha256 "0b8c40b34585cc93c9f94c751fbae4c25c3b1b1c3a974a0b5b739d38d906d86a"
       def install
         bin.install "wrkr"
       end
