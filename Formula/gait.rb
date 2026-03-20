@@ -1,16 +1,16 @@
 class Gait < Formula
   desc "Offline-first control plane for production AI agent tool calls"
   homepage "https://github.com/Clyra-AI/gait"
-  version "1.3.5"
+  version "1.3.6"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Clyra-AI/gait/releases/download/v1.3.5/gait_1.3.5_darwin_arm64.tar.gz"
-      sha256 "1818743ef2c4d5112c3d8b1293517b51c19f57cce1eff520d2616ee72621fd4e"
+      url "https://github.com/Clyra-AI/gait/releases/download/v1.3.6/gait_1.3.6_darwin_arm64.tar.gz"
+      sha256 "2004af5c56f0b5bf4b681e43640c10fb3f95ffcb80e1a053194288b12e127660"
     else
-      url "https://github.com/Clyra-AI/gait/releases/download/v1.3.5/gait_1.3.5_darwin_amd64.tar.gz"
-      sha256 "e07728089769867b84d9ccbadca64522fdeabeadadb08be44a23a64539a51935"
+      url "https://github.com/Clyra-AI/gait/releases/download/v1.3.6/gait_1.3.6_darwin_amd64.tar.gz"
+      sha256 "8e1d2d594b7f98f6a5bcbd0900ad8df581fb4362792372ac0782abedd7110d07"
     end
   end
 
