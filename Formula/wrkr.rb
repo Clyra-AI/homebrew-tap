@@ -5,21 +5,21 @@
 class Wrkr < Formula
   desc "Deterministic AI tooling discovery, risk scoring, and proof artifacts"
   homepage "https://github.com/Clyra-AI/wrkr"
-  version "1.11.1"
+  version "1.11.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Clyra-AI/wrkr/releases/download/v1.11.1/wrkr_1.11.1_darwin_amd64.tar.gz"
-      sha256 "79b033be10c794197ad4e0f4be4fa59f9d33f0cb80ae296c30638da9f03346f3"
+      url "https://github.com/Clyra-AI/wrkr/releases/download/v1.11.2/wrkr_1.11.2_darwin_amd64.tar.gz"
+      sha256 "8299ad297620a8e7075f785f2e26235d3be64064e55bda1bb3bfd2b03bb20eba"
 
       def install
         bin.install "wrkr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Clyra-AI/wrkr/releases/download/v1.11.1/wrkr_1.11.1_darwin_arm64.tar.gz"
-      sha256 "5f99cff5aed0e24b164bc1458505a00783f630ee034b7bd32168dcf712013364"
+      url "https://github.com/Clyra-AI/wrkr/releases/download/v1.11.2/wrkr_1.11.2_darwin_arm64.tar.gz"
+      sha256 "979568de201860e53a0afcee5337b671e59b366948831033290d39bf081dd7b3"
 
       def install
         bin.install "wrkr"
@@ -29,15 +29,15 @@ class Wrkr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Clyra-AI/wrkr/releases/download/v1.11.1/wrkr_1.11.1_linux_amd64.tar.gz"
-      sha256 "ba867d701fc7a85cb954e52352e43253d98012cb891a5bd472b5a999c136ceb2"
+      url "https://github.com/Clyra-AI/wrkr/releases/download/v1.11.2/wrkr_1.11.2_linux_amd64.tar.gz"
+      sha256 "2996e9d7ea875892badd483697147390a1774a60b674a3b0605d8801518e4193"
       def install
         bin.install "wrkr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Clyra-AI/wrkr/releases/download/v1.11.1/wrkr_1.11.1_linux_arm64.tar.gz"
-      sha256 "c40db4b75034442a08d2250c8c328d6afcf6978d2fae30fb97f637fbe888d571"
+      url "https://github.com/Clyra-AI/wrkr/releases/download/v1.11.2/wrkr_1.11.2_linux_arm64.tar.gz"
+      sha256 "2f56dd17981519f3c1061ccaf40b146dd3944cc9d91db8a9839ac9415bfe53a3"
       def install
         bin.install "wrkr"
       end
