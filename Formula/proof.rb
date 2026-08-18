@@ -5,21 +5,21 @@
 class Proof < Formula
   desc "Deterministic proof records and offline verification CLI"
   homepage "https://github.com/Clyra-AI/proof"
-  version "0.4.6"
+  version "0.5.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Clyra-AI/proof/releases/download/v0.4.6/proof_0.4.6_darwin_amd64.tar.gz"
-      sha256 "143fe2d0ad1e38c70001259ace1b1b8dad0f4371d2c302dca42c1d4ffd2ad8bc"
+      url "https://github.com/Clyra-AI/proof/releases/download/v0.5.0/proof_0.5.0_darwin_amd64.tar.gz"
+      sha256 "8a81fe51d73819e83a8844c67bca608e02e9ba455b57aafd3c5be920f2b2f759"
 
       def install
         bin.install "proof"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Clyra-AI/proof/releases/download/v0.4.6/proof_0.4.6_darwin_arm64.tar.gz"
-      sha256 "c44f219dcd3df7049e02b69a62f2f1f30d249fce35e8a0ca9674a1d34fcbe82b"
+      url "https://github.com/Clyra-AI/proof/releases/download/v0.5.0/proof_0.5.0_darwin_arm64.tar.gz"
+      sha256 "9faae659e14e57ee8a4647c40e5045f22ce8dbfeee03be9d5fad424d162b1356"
 
       def install
         bin.install "proof"
@@ -29,15 +29,15 @@ class Proof < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Clyra-AI/proof/releases/download/v0.4.6/proof_0.4.6_linux_amd64.tar.gz"
-      sha256 "5d279000072eb1c2e4df52c662a983ef26039bdc6d1eda0ea22af93bb7633ead"
+      url "https://github.com/Clyra-AI/proof/releases/download/v0.5.0/proof_0.5.0_linux_amd64.tar.gz"
+      sha256 "5cdbb9d9b481259434b6d0d5c1c8468c8a4a88f901de54157daf5a64889ad544"
       def install
         bin.install "proof"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Clyra-AI/proof/releases/download/v0.4.6/proof_0.4.6_linux_arm64.tar.gz"
-      sha256 "16e6015be75f92010d1a43dc139c9a3946475bdf893f837e610bac693c022eb6"
+      url "https://github.com/Clyra-AI/proof/releases/download/v0.5.0/proof_0.5.0_linux_arm64.tar.gz"
+      sha256 "9c34c461db92956371a32479b884f33eeb766a2c7be503e466b3ff58e4dc5ed2"
       def install
         bin.install "proof"
       end
